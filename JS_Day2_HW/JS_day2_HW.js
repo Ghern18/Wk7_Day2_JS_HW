@@ -95,12 +95,12 @@ const Person = (name, age) => {
     If the length of the string is less than 10 console log "Small Number"
 */
 
-const checkStringLength = (string) => {
+const checkStringLength = (string) => {  //syntax error?
   return new Promise((resolve, reject) => {
     if (string.length > 10) {
       resolve("Big word");
     } else {
-      reject("Small Number");
+      reject(new Error("Small Number"));
     }
   });
 };
